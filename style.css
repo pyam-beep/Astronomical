@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Tilt+Neon&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* background-img */
+.full-cover img{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+ 
+/* Home */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .coffee-head{
+    width: 34%;
+}
+
+.header .coffee-head a{
+    font-size: 1.09rem;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    word-spacing: 5%;
+}
+
+.header .coffee-head a:hover{
+    transition: .5s ease;
+    border-bottom: .1rem solid #bba491;
+    padding-bottom: .3rem;
+    color: #bba491;
+}
+
+.header .logo{
+    cursor: pointer;
+    padding: 10px;
+}
+
+.header .logo img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.header .logo img:hover{
+    transform: scale(1.05);
+    transition: .4s ease;
+}
+
+.header .logo p{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logo p:hover{
+    color: #bba491;
+    transition: .4s ease;
+    transform: scale(1.05);
+}
+
+/* Introduction to shop (Home) */
+.coffee-intro{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+    padding-top: 170px;
+}
+
+.coffee-intro .letters{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.letters a{
+    width: 19%;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 3px solid #73563f;
+}
+
+.letters a:hover{
+    background-color: #73563f;
+    transition: .1s ease;
+}
+
+.coffee-intro .letters h2{
+    padding-bottom: 30px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    word-spacing: .2rem;
+}
+
+.coffee-intro .letters h2 .under{
+    font-size: 3rem;
+    color: #af7971; 
+}
+
+.coffee-intro .letters h2 .color{
+    color: #af7971;
+    font-size: 2.5rem;
+}
+
+.coffee-intro .img-letters{
+    position: relative;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee-intro .img-letters img{
+    position: relative;
+    width: 300px;
+}
+
+.coffee-intro .img-letters img:hover{
+    transform: scale(1.04);
+    transition: .4s ease;
+}
+
+/* End Home */
+
+/* About-Us */
+#about-us{
+    background-image: url("coffee-color.jpg");
+    background-size: cover;
+    padding: 40px;
+}
+
+#about-us .about-heading{
+    font-size: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+#about-us .content{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-us .aboutus{
+    background-color: #bba491;
+    padding: 20px;
+    border-top-right-radius: 100%;
+}
+
+#about-us .about{
+    color: #bba491;
+}
+
+#about-us .aboutus p{ 
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+#about-us .aboutus-img img{
+    padding: 20px 30px;
+    height: 400px;
+}
+
+#about-us .continue{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+#about-us .continue a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#about-us .continue h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 10px;
+}
+
+#about-us .continue h2:after{
+    content: '';
+    position: absolute;
+    width: 25%;
+    padding: 10px;
+    height: 5px;
+    bottom: -10px;
+    left: -4px;
+    transform: scaleX(0);
+    border-bottom: 3px solid #fff;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+#about-us .continue h2:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+#about-us .town{
+    color: #73563f;
+    font-size: 1.7rem;
+}
+/* End About-Us */
+
+/* Menu */
+#menu{
+    background-image: url("white.jpg");
+    background-size: cover;
+    padding: 40px;
+}
+
+#menu .main-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#menu .menu-heading{
+    font-size: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
+}
+
+#menu .menu-items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#menu .menus{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    background-image: url("white-coffee.jpg");
+    box-shadow: 0 0 20px #5b6463;
+    width: 70%;
+    transition: .3s ease box-shadow;
+    border-radius: 5px;
+}
+
+#menu .menus:hover{
+    box-shadow: 0 0 5px 0#5b6463;
+}
+
+#menu .menus .coffee p{
+    letter-spacing: .1rem;
+}
+
+#menu .menus .coffee-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+    
+}
+
+#menu .menus .coffee-img p{
+    background-color: black;
+    box-shadow: 0 0 18px 0 #5b6463;
+    color: white;
+    padding: 5px;
+}
+
+#menu .main-box img{
+    width: 250px;
+    height: auto;
+}
+
+/* End Menu */
+
+/* Review */
+
+#review{
+    background-image: url("review-bg.jpg");
+    background-size: cover;
+}
+
+#review .review-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#review .review-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 2rem;
+    position: relative;
+}
+
+#review .review-heading .v{
+    color: #488ffb;
+}
+
+#review .review-heading .w{
+    color: #488ffb;
+}
+
+#review .review-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#review .reviews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+}
+
+#review .reviews p{
+    font-size: 1.5rem;
+}
+
+#review .review-img img{
+    width: 300px;
+}
+
+/* Contact Section */
+#contact{
+    background-image: url("contact-bg.jpg");
+    background-size: cover;
+}
+
+#contact .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.section-title{
+    position: relative;
+    font-size: 2.4rem;
+    padding: 30px;
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.info{
+    color: black;
+}
+#contact .contact-items{
+    width: 400px;
+}
+#contact .contact-item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 22px 0 #0000002c;
+    transition: .3s ease box-shadow;
+    background-color: white;
+}
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#contact .contact-info h1{
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#contact .contact-info h2{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+/* End Contact */
+
+/*Footer*/
+
+#footer {
+    background-image: linear-gradient( #b89578, #b5865b);
+}
+
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#footer h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#footer .social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+#footer .social-item img{
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+#footer .social-item:hover img{
+    filter: grayscale(0);
+}
+#footer p{
+    color: white;
+    font-size: 1.3rem;
+}
+.astro{
+    color: white;
+}
+/*End Footer*/
